@@ -1,0 +1,137 @@
+:root {
+  --asphalt: #14161c;
+  --panel: #1c2029;
+  --signal: #ff6a2b;
+  --paper: #f2ede2;
+  --muted: #9aa0ac;
+  --line: #343a48;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: env(safe-area-inset-top, 0px) 18px 60px;
+  padding-top: max(28px, env(safe-area-inset-top, 0px));
+  color: var(--paper);
+}
+
+header {
+  padding: 6px 4px 26px;
+}
+
+.brand {
+  font-family: "Barlow Condensed", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  color: var(--signal);
+}
+
+h1 {
+  font-family: "Barlow Condensed", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(30px, 8vw, 40px);
+  line-height: 1.05;
+  margin: 6px 0 10px;
+}
+
+header p {
+  color: var(--muted);
+  font-size: 15px;
+  max-width: 46ch;
+  margin: 0;
+}
+
+.dept {
+  margin-top: 36px;
+}
+
+.dept-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+.dept-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--signal);
+  flex: none;
+}
+
+.dept-head h2 {
+  font-family: "Barlow Condensed", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+}
+
+.contact {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+
+.contact-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.contact-name {
+  font-weight: 600;
+  font-size: 16.5px;
+}
+
+.contact-phone {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14.5px;
+  border-bottom: 1px dotted var(--line);
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 14.5px;
+  padding: 9px 10px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: background 0.15s ease;
+}
+
+.topic:hover,
+.topic:active {
+  background: rgba(255, 106, 43, 0.14);
+}
+
+.topic-icon {
+  flex: none;
+  width: 1.2em;
+  text-align: center;
+}
+
+footer {
+  margin-top: 34px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
