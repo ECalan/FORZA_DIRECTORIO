@@ -61,6 +61,11 @@ const DEPARTMENTS = [
         tel: "+50247703179",
         topics: [
           {
+            icon: "🆔",
+            label: "Gafetes de Identificación",
+            wa: "https://wa.me/50247703179?text=Gafetes%20de%20identificaci%C3%B3n",
+          },
+          {
             icon: "🪪",
             label: "Trámite de Carné de IRTRA",
             wa: "https://wa.me/50247703179?text=Tramite%20de%20Carne%20de%20IRTRA",
@@ -123,12 +128,7 @@ const DEPARTMENTS = [
             icon: "🏖️",
             label: "Saldo de Días de Vacaciones",
             wa: "https://wa.me/50237574907?text=Consulta%20sobre%20Saldo%20de%20Dias%20de%20Vacaciones",
-          },
-          {
-            icon: "🆔",
-            label: "Gafetes de Identificación",
-            wa: "https://wa.me/50247703179?text=Gafetes%20de%20identificaci%C3%B3n",
-          },
+          }
         ],
       },
       {
